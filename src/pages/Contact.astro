@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import ContactForm from "../components/ContactForm.astro";
+
+const heroContent = {
+  title: `Let's Get In Touch!`,
+  description: `Ready to start your next porject with us? Give us a call or send us email and we will get back to you soon as possible!`,
+};
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Header />
+    <Hero title={heroContent.title} description={heroContent.description} />
+    <div class="contact">
+      <h4>+91 99409 75125</h4>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-details">
+        <div>
+          <div>For Quote requests, Art and Embroidery Digitizing Jobs</div>
+          <div>business@valuearcservices.com</div>
+        </div>
+
+        <div>
+          <div>For Sales including RFP, RFQ, RFI.</div>
+          <div>sales@valuearcservices.com</div>
+        </div>
+        <div>
+          <div>For Billing</div>
+          <div>billing@valuearcservices.com</div>
+        </div>
+        <div>
+          <div>For Accounting</div>
+          <div>accounting@valuearcservices.com</div>
+        </div>
+        <div>
+            <div>For Human Resources</div>
+            <div>support@valuearcservices.com</div>
+            <small>(For candidates who want to apply for the artwork and embroidery digitizers positions)</small>
+          </div>
+      </div>
+      <div class="contact-form">
+        <ContactForm></ContactForm>
+      </div>
+    </div>
+  </main>
+
+  <style>
+    main {
+      margin: auto;
+      padding: 1rem;
+      max-width: calc(100% - 2rem);
+      color: white;
+      line-height: 1.6;
+    }
+    .contact {
+      display: flex;
+      justify-content: center;
+      color: #f0692c;
+      text-decoration: none;
+    }
+    .contact-layout {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #39446B;
+      padding: 20px;
+      width: 1000px;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+  </style>
+</Layout>

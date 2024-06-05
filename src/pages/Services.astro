@@ -1,11 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+
+const heroContent = {
+	title:'Explore our diverse designs',
+	description:'Discover our selection below to streamline and elevate your projects.'
+}
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<Header></Header>
+		<Hero title={heroContent.title} description={heroContent.description}></Hero>
+		<Card></Card>
 	</main>
 </Layout>
 

@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import { Image } from 'astro:assets';
+import p1 from '../assets/images/Value-Arc-Portfolio_2.jpg';
+import p2 from '../assets/images/Value-Arc-Portfolio_3.jpg';
+import p3 from '../assets/images/Value-Arc-Portfolio_4.jpg';
+import p4 from '../assets/images/Value-Arc-Portfolio_5.jpg';
+import p5 from '../assets/images/Value-Arc-Portfolio_6.jpg';
+import p6 from '../assets/images/Value-Arc-Portfolio_7.jpg';
+import p7 from '../assets/images/Value-Arc-Portfolio_8.jpg';
+import p8 from '../assets/images/Value-Arc-Portfolio_9.jpg';
+import p9 from '../assets/images/Value-Arc-Portfolio_10.jpg';
+import p10 from '../assets/images/Value-Arc-Portfolio_11.jpg';
+import p11 from '../assets/images/Value-Arc-Portfolio_12.jpg';
+import p12 from '../assets/images/Value-Arc-Portfolio_13.jpg';
+import p13 from '../assets/images/Value-Arc-Portfolio_14.jpg';
+import p14 from '../assets/images/Value-Arc-Portfolio_15.jpg';
+import p15 from '../assets/images/Value-Arc-Portfolio_16.jpg';
+
+
+const heroContent = {
+	title:'Our Work',
+	description:''
+}
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Header></Header>
+		<Hero title={heroContent.title} description={heroContent.description}></Hero>
+        <div class="left">
+            <Image src={p1} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl aspect-auto object-cover size-full' />
+        </div>
+        <div class="right">
+            <Image src={p2} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl size-full' />
+        </div>
+        <div class="left">
+            <Image src={p3} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl aspect-auto size-full' />
+        </div>
+        <div class="right">
+            <Image src={p4} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl size-full' />
+        </div>
+
+        <div class="left">
+            <Image src={p5} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl aspect-auto size-full' />
+        </div>
+        <div class="right">
+            <Image src={p6} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl size-full' />
+        </div>
+
+
+        <div class="left">
+            <Image src={p7} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl aspect-auto size-full' />
+        </div>
+        <div class="right">
+            <Image src={p8} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl size-full' />
+        </div>
+
+        <div class="left">
+            <Image src={p9} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl aspect-auto size-full' />
+        </div>
+        <div class="right">
+            <Image src={p10} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl size-full' />
+        </div>
+
+        <div class="left">
+            <Image src={p11} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl aspect-auto size-full' />
+        </div>
+        <div class="right">
+            <Image src={p12} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl size-full' />
+        </div>
+
+        <div class="left">
+            <Image src={p13} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl aspect-auto size-full' />
+        </div>
+        <div class="right">
+            <Image src={p14} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl size-full' />
+        </div>
+
+        <div class="left">
+            <Image src={p15} alt="A" class='border-solid border-2 border-slate-600 rounded-3xl aspect-auto size-full' />
+        </div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		max-width: calc(100% - 2rem);
+		color: white;
+		line-height: 1.6;
+	}
+	.left{
+        display: flex;
+        padding: 10px;
+    }
+    .right{
+        display: flex;
+        padding: 10px;
+        justify-content: end;
+    }
+</style>

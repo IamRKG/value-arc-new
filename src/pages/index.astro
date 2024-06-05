@@ -5,12 +5,19 @@ import Hero from '../components/Hero.astro';
 import ImageSlider from '../components/ImageSlider.astro';
 import Wave from '../components/Wave.astro';
 
+
+const heroContent = {
+	title:'Value Arc Design Services',
+	description:'Offers a variety of design services, including converting images to vectors, Custom Screen Print Namedrops, Hard Goods Namedrops, Customer Proofs, Template Creation, Sublimation, Image Optimization, Image Silhouetting, Ghost Mannequin, Color Separation and Embroidery Digitizing Services.'
+}
 ---
+
+
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<Header></Header>
-		<Hero></Hero>
+		<Hero title={heroContent.title} description={heroContent.description}></Hero>
 		<ImageSlider></ImageSlider>
 		<Wave></Wave>
 	</main>

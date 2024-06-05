@@ -1,13 +1,13 @@
 ---
 
-import Eagle from './Eagle.astro';
+const { title, description } = Astro.props;
 ---
 
 <div class="hero">
     <div>
     <h2>
-        Value Arc Design Services</h2>
-        <p><span>Offers a variety of design services, including converting images to vectors, Custom Screen Print Namedrops, Hard Goods Namedrops, Customer Proofs, Template Creation, Sublimation, Image Optimization, Image Silhouetting, Ghost Mannequin, Color Separation and Embroidery Digitizing Services.</span>
+        {title}</h2>
+        <p><span>{description}</span>
         </p>
         </div>
     </div>
